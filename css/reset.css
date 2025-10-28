@@ -1,5 +1,5 @@
 @charset "utf-8";
-* {margin:0; padding:0; box-sizing:border-box;}
+* {margin:0; padding:0;}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -27,17 +27,9 @@ img { vertical-align: bottom;border:0px;}
 table{border-collapse:collapse;border-spacing:0;}
 
 /*CLEARFIX*/
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-	}
- 
-.clearfix:after {
-    clear: both;
+.clearfix:before, .clearfix:after {
+    content:"";
+    display:table
 }
- 
-.clearfix {
-    *zoom: 1; /* for IE 6/7 only */
-	overflow:hidden;/* for DreamWeaver */
-}
+.clearfix:after { clear:both }
+.clearfix { zoom:1; overflow:hidden;} /* For IE 6/7 */
